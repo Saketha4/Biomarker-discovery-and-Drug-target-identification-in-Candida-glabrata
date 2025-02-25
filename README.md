@@ -7,47 +7,33 @@ This project outlines a comprehensive methodology for discovering biomarkers and
 # **Methods**
 
 ## **Genome-Scale Metabolic Model (GEMM)**
-Model Development: The GEMM for Candida glabrata is constructed using publicly available genomic and transcriptomic data. Tools such as the COBRA Toolbox facilitate the reconstruction of the metabolic network, allowing for the exploration of metabolic pathways critical to pathogenicity and drug resistance.
+The GEMM for Candida glabrata is constructed using publicly available genomic and transcriptomic data. The metabolic network reconstruction is facilitated by tools such as the COBRA Toolbox, allowing for the exploration of metabolic pathways critical to pathogenicity and drug resistance.
 * [CG_GSMM](https://1drv.ms/x/c/82e11bf00f8ea8cf/EcuVGumvd4VJnTXWpR-F0m0B4oxQQlK9FLs8vF2GGozDkQ?e=LOarwH)
 
- Pathway Analysis: Analyze metabolic pathways to identify key processes contributing to virulence and potential biomarkers.
+ Pathway Analysis: Metabolic pathways are analyzed to identify key processes contributing to virulence and potential biomarkers.
 
 ##  **Identification of Unique Proteins using BLASTp**
 Proteome Comparison:
-Use BLASTp to compare the Candida glabrata proteome against human proteins and other Candida species (e.g., Candida albicans).
-Prepare a comprehensive database including human and various Candida proteomes for comparison.
-Set appropriate BLASTp parameters (e.g., e-value threshold, scoring matrix) to identify unique proteins.
-Candidate Biomarkers: Filter results to select proteins unique to Candida glabrata without homologs in humans, reducing the risk of off-target effects.
+BLASTp is used to compare the Candida glabrata proteome against human proteins and those of other Candida species (e.g., Candida albicans). A comprehensive database, including human and various Candida proteomes, is prepared for comparison. BLASTp parameters (e.g., e-value threshold, scoring matrix) are set appropriately to identify unique proteins.
+Candidate Biomarkers: The results are filtered to select proteins unique to Candida glabrata without homologs in humans, reducing the risk of off-target effects.
 
 ## **Structure Prediction using AlphaFold**
 AlphaFold Implementation:
-Utilize AlphaFold to predict the 3D structures of the unique proteins identified through BLASTp.
-Prepare the protein sequences as input for AlphaFold, ensuring data quality and appropriate formatting.
-Quality Assessment: Evaluate the structural predictions using confidence metrics provided by AlphaFold, ensuring reliability in downstream analyses.
+AlphaFold is utilized to predict the 3D structures of the unique proteins identified through BLASTp. The protein sequences are prepared as input for AlphaFold.
 
 ## **Structure-Based Searches using DALI**
 DALI Search:
-Submit predicted protein structures to the DALI server to identify structurally similar proteins with known functions.
-Interpret the results to uncover potential functional insights and conserved mechanisms that could inform target selection.
+Predicted protein structures are submitted to the DALI server to identify structurally similar proteins with known functions. The results are interpreted to uncover potential functional insights and conserved mechanisms that could inform target selection.
 
 ## **Molecular Docking**
 Docking Setup:
-Conduct molecular docking studies to evaluate interactions between the unique proteins and potential small molecule inhibitors.
-Use software such as AutoDock Vina, setting parameters for binding site identification and docking simulations.
-Analysis of Results: Report docking scores and binding affinities, highlighting key interactions and the potential for specificity against Candida glabrata targets.
-
-## **Inhibitor Design**
-Design Strategy:
-Implement structure-based drug design approaches to develop inhibitors targeting unique proteins.
-Conduct virtual screening of compound libraries to identify promising candidates.
-Lead Optimization: Optimize identified leads through iterative design processes, assessing binding affinity and pharmacokinetic properties to enhance therapeutic potential.
+Molecular docking studies are conducted to evaluate interactions between the unique proteins and potential small molecule inhibitors. Software such as AutoDock Vina is used, with parameters set for binding site identification and docking simulations.
 
 #  Results
-Unique Protein Candidates: List of unique proteins identified from BLASTp analysis, highlighting those with potential biomarker roles.
-Predicted Structures: Summary of AlphaFold predictions, including structures with high confidence scores.
-DALI Findings: Insights gained from DALI searches, including functional annotations of homologous proteins.
-Docking Results: Presentation of docking scores, highlighting interactions for selected inhibitors.
-Inhibitor Candidates: Overview of potential inhibitors, including preliminary efficacy predictions based on docking results.
+Unique Protein Candidates: A list of unique proteins identified from BLASTp analysis is provided, highlighting those with potential biomarker roles.
+Predicted Structures: A summary of AlphaFold predictions is included, featuring structures with high confidence scores.
+DALI Findings: Insights gained from DALI searches are presented, including functional annotations of homologous proteins.
+Docking Results: Docking scores are reported, highlighting interactions for selected inhibitors.
 
 ## Discussion
 Interpretation of Findings: Analyze the implications of identified biomarkers and drug targets, discussing how they may contribute to improved treatment strategies for Candida glabrata infections.
@@ -55,10 +41,10 @@ Comparison with Existing Therapies: Evaluate how new targets and biomarkers comp
 Limitations: Acknowledge any methodological limitations and suggest future research directions to enhance the study.
 
 # Conclusion
-Summarize the key findings and their significance in advancing therapeutic options for Candida glabrata infections, emphasizing the role of computational methods in biomarker discovery and drug target identification.
+
 
 ##  References
-List all relevant literature cited throughout the documentation, focusing on key studies related to Candida glabrata, metabolic modeling, molecular docking, and drug design.
+
 
 ## Appendices
-Include any supplementary data, scripts, or additional resources that support the methodologies and findings presented in the document.
+
