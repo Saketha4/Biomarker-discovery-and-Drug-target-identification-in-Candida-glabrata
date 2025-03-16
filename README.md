@@ -14,7 +14,7 @@ The GEMM for Candida glabrata is constructed using publicly available genomic an
 
 ##  **Identification of Unique Proteins using BLASTp**
 Proteome Comparison:
-BLASTp is used to compare the Candida glabrata proteome against human proteins and those of other Candida species (e.g., Candida albicans). A comprehensive database, including human and various Candida proteomes, is prepared for comparison. BLASTp parameters (e.g., e-value threshold, scoring matrix) are set appropriately to identify unique proteins.
+BLASTp is used to compare the Candida glabrata proteome against human proteins. A comprehensive database is prepared for comparison. BLASTp parameters (e.g., e-value threshold, scoring matrix) are set appropriately to identify unique proteins.
 Candidate Biomarkers: The results are filtered to select proteins unique to Candida glabrata without homologs in humans, reducing the risk of off-target effects.
 
 ## **Structure Prediction using AlphaFold**
