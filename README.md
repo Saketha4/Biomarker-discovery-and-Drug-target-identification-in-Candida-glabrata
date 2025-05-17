@@ -1,10 +1,16 @@
 # Biomarker discovery and Drug target identification in Candida glabrata
 
-Candida glabrata is an opportunistic yeast that poses a growing threat in immunocompromised patients, particularly due to its increasing resistance to common antifungal agents. Identifying unique biomarkers and effective drug targets is critical for developing new therapeutic strategies.
+ Candida glabrata is an opportunistic yeast that poses a significant threat to immunocompromised individuals, largely due to its increasing resistance to antifungal treatments. Unlike other Candida species,  C. glabrata exhibits a high degree of intrinsic resistance to azoles and echinocandins, and its virulence is often compounded by its ability to form biofilms and evade immune responses. Therefore, identifying unique biomarkers and effective drug targets is crucial for developing novel therapeutic strategies.
+ 
+ This project presents an integrative approach combining computational techniques to discover biomarkers and identify novel drug targets for Candida glabrata. The methodology utilizes genome-scale metabolic models (GEMM), BLASTp, AlphaFold, DALI, and molecular docking to uncover potential therapeutic targets that are unique to C. glabrata, with minimal off-target effects on humans
 
-This project outlines a comprehensive methodology for discovering biomarkers and identifying drug targets in Candida glabrata, a significant fungal pathogen known for its resistance to antifungal therapies. The integration of computational tools such as genome-scale metabolic models, BLASTp, molecular docking, AlphaFold, DALI will be detailed.
+# Project Goals#
 
-# **Methods**
+ • __Biomarker Discovery__: Identify proteins unique to C. glabrata that can be used as diagnostic biomarkers for infection detection. \
+ • __Drug Target Identification__: Identify novel drug targets that could be exploited to treat C. glabrata infections, with a focus on targets that are essential for fungal survival and not present in human cells.\
+ • __In Silico Validation__: Use computational techniques to validate identified targets through structure prediction, drug-likeness screening, and molecular docking studies.
+ 
+# **Methodology**
 
 ## **Genome-Scale Metabolic Model (GEMM)**
 The GEMM for Candida glabrata is constructed using publicly available genomic and transcriptomic data. The metabolic network reconstruction is facilitated by tools such as the COBRA Toolbox, allowing for the exploration of metabolic pathways critical to pathogenicity and drug resistance.
@@ -30,15 +36,18 @@ Docking Setup:
 Molecular docking studies are conducted to evaluate interactions between the unique proteins and potential small molecule inhibitors. Software such as AutoDock Vina is used, with parameters set for binding site identification and docking simulations.
 
 #  Results
-Unique Protein Candidates: A list of unique proteins identified from BLASTp analysis is provided, highlighting those with potential biomarker roles.
-Predicted Structures: A summary of AlphaFold predictions is included, featuring structures with high confidence scores.
-DALI Findings: Insights gained from DALI searches are presented, including functional annotations of homologous proteins.
-Docking Results: Docking scores are reported, highlighting interactions for selected inhibitors.
+ • __Unique Proteins__: A list of C. glabrata proteins that are absent in humans, which could serve as novel biomarkers for diagnosis or therapeutic intervention.
+ • __3D Structures__: High-confidence structural predictions for identified proteins that can inform drug design.
+ • __Docking Scores__: Insights into the binding affinity of potential inhibitors to the target proteins.
+
+ # Tools and Resources
+ • BLASTp: For proteome comparison and identification of unique proteins.\
+ • COBRA Toolbox / cobrapy: For genome-scale metabolic modeling and flux balance analysis.\
+ • AlphaFold: For structure prediction of unique proteins.\
+ • DALI: For structure-based functional inference.\
+ • AutoDock Vina: For molecular docking studies
 
 ## Discussion
-Interpretation of Findings: Analyze the implications of identified biomarkers and drug targets, discussing how they may contribute to improved treatment strategies for Candida glabrata infections.
-Comparison with Existing Therapies: Evaluate how new targets and biomarkers compare to current antifungal treatments, addressing potential advantages.
-Limitations: Acknowledge any methodological limitations and suggest future research directions to enhance the study.
 
 # Conclusion
 
