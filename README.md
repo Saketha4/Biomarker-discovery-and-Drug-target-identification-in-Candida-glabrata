@@ -16,16 +16,16 @@
 The GEMM for Candida glabrata is constructed using publicly available genomic and transcriptomic data. The metabolic network reconstruction is facilitated by tools such as the COBRA Toolbox, allowing for the exploration of metabolic pathways critical to pathogenicity and drug resistance.
 * [CG_GSMM](https://1drv.ms/x/c/82e11bf00f8ea8cf/EcuVGumvd4VJnTXWpR-F0m0B4oxQQlK9FLs8vF2GGozDkQ?e=LOarwH)
 
- Pathway Analysis: Metabolic pathways are analyzed to identify key processes contributing to virulence and potential biomarkers.
+ Pathway Analysis: Identification of essential genes and metabolic pathways critical for pathogenicity.
 
 ##  **Identification of Unique Proteins using BLASTp**
 Proteome Comparison:
-BLASTp is used to compare the Candida glabrata proteome against human proteins. A comprehensive database is prepared for comparison. BLASTp parameters (e.g., e-value threshold, scoring matrix) are set appropriately to identify unique proteins.
+BLASTp is used to compare the Candida glabrata proteome against the human proteome. A comprehensive database is prepared for comparison. BLASTp parameters (e.g., e-value threshold, scoring matrix) are set appropriately to identify unique proteins.
 Candidate Biomarkers: The results are filtered to select proteins unique to Candida glabrata without homologs in humans, reducing the risk of off-target effects.
 
 ## **Structure Prediction using AlphaFold**
 AlphaFold Implementation:
-AlphaFold is utilized to predict the 3D structures of the unique proteins identified through BLASTp. The protein sequences are prepared as input for AlphaFold.
+AlphaFold is utilised to predict the 3D structures of the unique proteins identified through BLASTp. The protein sequences are prepared as input for AlphaFold.
 
 ## **Structure-Based Searches using DALI**
 DALI Search:
