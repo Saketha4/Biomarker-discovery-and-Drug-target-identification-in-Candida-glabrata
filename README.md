@@ -4,7 +4,7 @@
  
  This project presents an integrative approach combining computational techniques to discover biomarkers and identify novel drug targets for Candida glabrata. The methodology utilizes genome-scale metabolic models (GEMM), BLASTp, AlphaFold, DALI, and molecular docking to uncover potential therapeutic targets that are unique to C. glabrata, with minimal off-target effects on humans
 
-# Project Goals#
+# Project Goals
 
  • __Biomarker Discovery__: Identify proteins unique to C. glabrata that can be used as diagnostic biomarkers for infection detection. \
  • __Drug Target Identification__: Identify novel drug targets that could be exploited to treat C. glabrata infections, with a focus on targets that are essential for fungal survival and not present in human cells.\
