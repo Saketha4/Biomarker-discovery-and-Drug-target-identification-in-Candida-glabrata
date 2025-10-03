@@ -47,9 +47,6 @@ Molecular docking studies are conducted to evaluate interactions between the uni
  • DALI: For structure-based functional inference.\
  • AutoDock Vina: For molecular docking studies
 
-## Discussion
-
-# Conclusion
 
 
 ##  References
